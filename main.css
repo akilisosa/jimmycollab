@@ -1,0 +1,136 @@
+html{
+    background-color: black;
+}
+main {
+    background-color: black;
+
+
+}
+body,html {
+    height:100%;
+  }
+#headerContainer{
+    
+        float: left;
+        width: 100%;
+        display: block;
+        position: relative;
+        justify-content: right;
+        color:white;
+      
+       
+}
+
+h1 {
+    color:white;
+    
+   text-align: right;
+    word-wrap: break-word;
+    position: relative;
+        float: center;
+        
+        right:5%;
+    padding-left: 10%;
+    z-index: 2;
+
+
+}
+
+#backgroundGif{
+    background-color: beige;
+}
+
+#spaceship{
+    position: absolute;
+    top: 5vw;
+    right: 60vw;
+    width: 5vw;
+    height: 5vw;
+    
+    animation-name: orbit;
+    animation-duration: 200s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes orbit{
+    0%{
+        top: 5vw;
+        right:60vw;
+    }
+
+    39%{
+        top:12vw;
+        right:120vw;
+    }
+
+    40%{
+        top:-12vw;
+        right:120vw;
+    }
+    41%{
+        top:-12vw;
+        right:-10vw;
+    }
+    45%{
+        top:0vw;
+        right:0vw;
+    }
+    65%{
+        top: 2vw;
+        right:20vw;
+    }
+    100%{
+        top:5vw;
+        right:60vw;
+    }
+
+
+}
+
+
+#gear{
+    position: absolute;
+    top: 16vw;
+    right: 8vw;
+    width: 30vw;
+    height: 30vw;
+    opacity: 0;
+    border-radius: 50%;
+
+}
+
+
+
+
+#gear:hover{
+
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes appear {
+    
+    100% {opacity: 1;}
+  }
+
+
+
+
+
+#giffy {
+margin:auto;
+width: 100%;
+height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
